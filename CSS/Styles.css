@@ -33,9 +33,9 @@
         font: size 3rem;
        
      }
-     @media screen and (min-width: 1024px) 
-        body{
-            font: size 1.8rem; ;
+     @media screen and (min-width: 1024px) {
+        body {
+            font-size: 1.8rem; 
         }
         h1{
             font-size: 8rem;
@@ -44,9 +44,10 @@
             font-size: 4rem;
         }
         h3{
-            font: size 2.4rem;
+            font-size: 2.4rem;
         }
-     }
+    }
+     
      /* LInk */
     a {
         text-decoration: none;
@@ -95,7 +96,7 @@
         font: size 1.6rem;
 
     }
-    @media  and (min-width: 1024px) {
+    @media  and (min -width: 1024px) {
         .badge {
             font-size: 1.2rem;
         }
@@ -103,3 +104,31 @@
             font-size: 1.2rem;
          } 
        }
+
+    .list{
+        list-style: none
+        padding-left 0;
+        color: var(--color-headings);
+    }
+    .list--inline .list__item {
+        display: inline-block;
+        margin-right: 2rem;
+    }
+
+    .list--tick {
+        list-style-image:url(../images/tick.svg );
+        padding-left: 3rem;
+        }
+
+    .list--tick .list__item {
+            padding-left: 0.5rem;
+            margin: 1 rem;
+        }
+
+    @media screen and (max-width:1024px) {
+        .list--tick .list__item {
+            padding-left: 0;
+            margin: 5 rem;
+        }
+    }
+            
